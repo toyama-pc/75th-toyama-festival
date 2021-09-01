@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>パソコン同好会</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" >
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>パソコン同好会</h1>
+  </header>
+  <main>
+    <div class="about">
+      <div class="heading">
+        <h1>ABOUT</h1>
+      </div>
+      <div class="content">
+        <h2>部員</h2>
+        <h3>1年:5人　2年:2人　3年:2人</h3>
+        <h2>活動場所</h2>
+        <h3>教室、PC室など</h3>
+        <p>途中からの入部も部長まで伝えてもらえば可能です（むしろ大歓迎！）</p>
+      </div>
+    </div>
+    <div class="works">
+      <div class="heading">
+        <h1>WORKS</h1>
+      </div>
+      <div class="elements">
+        <div class="element">
+          <a href="https://scratch.mit.edu/projects/500491330">
+            <img src="img/life-game.png">
+            <div class="menu-title">
+              <h3>Life Game</h3>
+              <h4>柳瀬雄太</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://scratch.mit.edu/projects/493810953/">
+            <img src="img/stopwatch.png">
+            <div class="menu-title">
+              <h3>ストップウォッチ</h3>
+              <h4>柳瀬雄太</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://tym-tanno.github.io/waters3/">
+            <img src="img/waters.png">
+            <div class="menu-title">
+              <h3>Waters3</h3>
+              <h4>丹野和哉</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://tym-tanno.github.io/replacingstring/">
+            <img src="img/文字列変換.png">
+            <div class="menu-title">
+              <h3>文字列変換</h3>
+              <h4>丹野和哉</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://ranhai613.github.io/counter/">
+            <img src="img/counter.png">
+            <div class="menu-title">
+              <h3>Counter</h3>
+              <h4>胡 藍海</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://unityroom.com/games/jankoro">
+            <img src="img/jankoro.png">
+            <div class="menu-title">
+              <h3>雀コロ</h3>
+              <h4>胡 藍海</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://scratch.mit.edu/projects/562018125">
+            <img src="img/jankoro.png">
+            <div class="menu-title">
+              <h3>素数判定</h3>
+              <h4>福田唯人</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://scratch.mit.edu/projects/556583680/">
+            <img src="img/自動因数分解.png">
+            <div class="menu-title">
+              <h3>自動因数分解</h3>
+              <h4>福田唯人</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="https://rice-terrorism.web.app">
+            <img src="img/飯テロ.png">
+            <div class="menu-title">
+              <h3>飯テロ</h3>
+              <h4>奥山洋之</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="heading">
+        <h1>
+          FORM
+        </h1>
+      </div>
+      <form
+        class="content"
+        action="https://formspree.io/f/meqvrddw"
+        method="POST"
+      >
+        <textarea placeholder="何かあればどうぞ！" name="message" id="textarea"></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="icons">
+      <a href="https://twitter.com/toyama_pc_club"><i class="icon fab fa-twitter"></i></a>
+      <a href="https://instagram.com/toyama_pc_club"><i class="icon fab fa-instagram"></i></a>
+      <a href="https://line.me/R/ti/p/%40007qmqlh"><i class="icon fab fa-line"></i></a>
+    </div>
+    <p>This is not a school official website.</p>
+    <p>© 2021 戸山高校パソコン同好会</p>
+  </footer>
+</body>
+
+<script>
+  window.addEventListener("beforeunload", () => {
+    const textarea = document.getElementById("textarea")
+    textarea.value = ""
+  })
+</script>

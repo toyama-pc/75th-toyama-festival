@@ -1,0 +1,159 @@
+body {
+  margin: 0;  
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a, ul {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(231, 231, 250);
+  z-index: 1000;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+main {
+  padding: 70px 15px 50px 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.heading {
+  text-align: center;
+  border-bottom: solid 4px rgb(93, 147, 228);
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 10px;
+}
+
+.about .content{
+  text-align: center;
+}
+
+.elements {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+  gap: 30px;
+}
+
+.element {
+  display: block;
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.element > a {
+  display: block;
+}
+
+.element :active {
+  box-shadow: none;
+}
+
+.element img {
+  border-radius: 20px;
+  border: 1px solid rgb(164, 227, 238);
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.menu-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding:15px 30px;
+  margin: 0 auto;
+  background-color: white;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  border-end-end-radius: 20px;
+  border-end-start-radius: 20px;
+}
+
+.menu-title h3{
+  color: black;
+  text-align: left;
+  font-family: 'Kiwi Maru',serif;
+}
+
+.menu-title h4{
+  text-align: right;
+  color: black;
+  font-family: 'Kiwi Maru',serif;
+}
+
+.form .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.form .content textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+.form .content button { 
+  background-color: rgb(93, 147, 228);
+  padding: 7px 14px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 30px 0;
+  color: rgb(64,64,64);
+  background-color: rgb(164, 227, 238);
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.icon{
+  font-size: 3.5rem;
+  color: rgb(86, 86, 86)
+}
