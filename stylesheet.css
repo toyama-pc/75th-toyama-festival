@@ -137,6 +137,10 @@ main {
   border: none;
 }
 
+.empty {
+  width: 300px;
+}
+
 footer {
   display: flex;
   align-items: center;
