@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>パソコン同好会</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" >
-  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="stylesheet" href="./index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
@@ -98,6 +98,24 @@
           </a>
         </div>
         <div class="element">
+          <a href="/404.html">
+            <img src="img/上へあがれ！.png">
+            <div class="menu-title">
+              <h3>上へあがれ！</h3>
+              <h4>斎藤柊</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
+          <a href="/404.html">
+            <img src="img/迫る敵を打て！.png">
+            <div class="menu-title">
+              <h3>迫る敵を打て！</h3>
+              <h4>斎藤柊</h4>
+            </div>
+          </a>
+        </div>
+        <div class="element">
           <a href="https://scratch.mit.edu/projects/556583680/">
             <img src="img/自動因数分解.png">
             <div class="menu-title">
@@ -107,7 +125,7 @@
           </a>
         </div>
         <div class="element">
-          <a href="https://rice-terrorism.web.app">
+          <button onclick="navigateRice()">
             <img src="img/飯テロ.png">
             <div class="menu-title">
               <h3>飯テロ</h3>
@@ -152,4 +170,10 @@
     const textarea = document.getElementById("textarea")
     textarea.value = ""
   })
+
+  const navigateRice = () => {
+    const isMobile = window.innerWidth < 400
+    if(isMobile) window.location.href = "https://rice-terrorism.web.app"
+    else window.location.href = "rice.html"
+  }
 </script>
